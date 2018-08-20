@@ -1162,6 +1162,10 @@
       </FileRef>
    </Group>
    <Group
+      location = "container:"
+      name = "Network Flows">
+   </Group>
+   <Group
       location = "group:Hash Table"
       name = "Hash Table">
       <FileRef
@@ -1812,6 +1816,20 @@
       </FileRef>
       <FileRef
          location = "group:Multiset/README.markdown">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Network Flows">
+      <Group
+         location = "container:"
+         name = "img">
+         <FileRef
+            location = "group:networkExample.png">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:README.md">
       </FileRef>
    </Group>
    <Group
