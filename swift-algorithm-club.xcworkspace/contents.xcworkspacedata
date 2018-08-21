@@ -1823,13 +1823,20 @@
       name = "Network Flows">
       <Group
          location = "container:"
+         name = "NetworkGraph">
+         <FileRef
+            location = "group:/Users/trevorstevenson/Documents/Developer/iOS/swift-algorithm-club/Network Flows/NetworkGraph.swift">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
          name = "img">
          <FileRef
-            location = "group:networkExample.png">
+            location = "group:Network Flows/networkExample.png">
          </FileRef>
       </Group>
       <FileRef
-         location = "group:README.md">
+         location = "group:Network Flows/README.md">
       </FileRef>
    </Group>
    <Group
