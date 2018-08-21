@@ -34,7 +34,7 @@ An analagous definition is the sum of the net flows f(v, t) for sink node t and 
 
 The maximum flow problem is to find a flow with maximum value that satisfies all constraints of a flow function.
 
-We need some definitions 
+We must establish some definitions before explaining the algorithm.
 
 
 
