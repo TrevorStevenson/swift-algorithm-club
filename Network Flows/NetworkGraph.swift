@@ -17,6 +17,13 @@ class NetworkNode<T> {
     }
 }
 
+class NetworkPath<T> {
+    var start: NetworkNode?
+    var next: NetworkPath<T>?
+    
+    var flow: Int = 0
+}
+
 class NetworkGraph<T> {
     var source: NetworkNode<T>?
     var target: NetworkNode<T>?
@@ -28,7 +35,7 @@ class NetworkGraph<T> {
         
         if start.value == value { return start }
         
-        for neighbor, _ in start.neighbors {
+        for (neighbor, _) in start.neighbors {
             depthFirstSearch(startNode: neighbor, targetValue: value)
         }
     }
@@ -44,7 +51,7 @@ class NetworkGraph<T> {
             let top = stack.popLast()
             if top.value == value { return top }
             
-            for neighbor, _ in top.neighbors {
+            for (neighbor, _) in top.neighbors {
                 stack.append(neighbor)
             }
         }
